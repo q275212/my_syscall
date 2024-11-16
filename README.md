@@ -15,8 +15,9 @@
     const char *msg = "Hello, World!\n";
     size_t len = 16; // 字符串长度
     ssize_t ret = my_syscall(__NR_write, STDOUT_FILENO, msg, len,0x1000000000LL);
-   
- ==============================================================
+
+==============================================================
+ 
     MOV             W8, #0xAC ; __NR_getpid
     SVC             0
 
